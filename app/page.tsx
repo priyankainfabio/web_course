@@ -52,7 +52,13 @@ useEffect(() => {
     <main className="min-h-screen bg-white text-[#0a2540] overflow-hidden">
       <header className="fixed top-0 left-0 w-full z-50 bg-white/85 backdrop-blur-xl border-b border-slate-100">
         <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Image src="/logo.png" alt="Logo" width={150} height={45} priority />
+          <Image
+            src="/logo.png"
+            alt="IconsBase Logo"
+            width={140}
+            height={40}
+            className="w-[140px] h-auto"
+          />
 
           <div className="hidden md:flex items-center gap-8 text-sm font-bold">
             <a href="#curriculum">Curriculum</a>
@@ -61,100 +67,121 @@ useEffect(() => {
             <a href="#faq">FAQ</a>
           </div>
 
-          <button className="bg-[#635bff] text-white px-6 py-3 rounded-lg font-bold shadow-lg shadow-indigo-200 hover:scale-105 transition">
+          <button className="bg-[#f4b400] text-[#0a2540] px-6 py-3 rounded-lg font-bold shadow-lg shadow-yellow-200 hover:scale-105 transition">
             Book Free Counseling →
           </button>
         </nav>
       </header>
 
-      <section className="relative min-h-screen pt-28 pb-24 px-6 overflow-hidden bg-[#fbfdff]">
-        {/* STRIPE STYLE ANIMATED BACKGROUND */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="stripe-ribbon" />
-          <div className="tech-grid" />
-          <div className="beam beam-one" />
-          <div className="beam beam-two" />
-          <div className="glow glow-one" />
-          <div className="glow glow-two" />
-        </div>
-        <div className="absolute inset-0 z-[1] bg-[radial-gradient(circle_at_75%_25%,rgba(99,91,255,0.35),transparent_45%),linear-gradient(to_left,transparent,rgba(255,255,255,0.95)_50%)]" />
-        <div className="absolute left-0 top-0 w-[60%] h-full bg-gradient-to-r from-white via-white/90 to-transparent z-[1]" />
+    <section className="hero-minimal">
+  <div className="hero-left">
+    
+    <span className="hero-tag">
+      🚀 12 Weeks AI Website Development Course
+    </span>
 
-        <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center min-h-[calc(100vh-5rem)]">
-          <div className="animate-fade-up">
-            <div className="inline-flex px-4 py-2 rounded-full bg-white/80 text-[#635bff] font-bold text-sm mb-8 border border-indigo-100 shadow-sm">
-              🚀 12 Weeks AI Website Development Course
-            </div>
+    <h1>
+      Master <span>AI Website Development</span><br />
+      in 12 Weeks.
+    </h1>
 
-            <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mb-8">
-              Become an <span className="text-[#635bff]">AI Website Developer</span> in 12 Weeks.
-            </h1>
+    <p>
+      Learn React, Next.js, AI tools, GitHub and deployment by building
+      real portfolio-ready websites with mentor-guided practice.
+    </p>
 
-            <p className="text-xl md:text-2xl text-[#425466] leading-relaxed max-w-3xl mb-10">
-              Learn React, Next.js, AI tools, Git, deployment and build
-              portfolio-ready websites with real project practice.
-            </p>
+    <div className="hero-buttons">
+      <button className="cta-yellow">
+        Book Free Counseling →
+      </button>
 
-            <div className="flex flex-wrap gap-4 mb-12">
-              <button className="bg-[#635bff] text-white px-8 py-4 rounded-lg font-bold shadow-[0_10px_40px_rgba(99,91,255,0.4)] hover:scale-105 transition">
-                Book Free Counseling →
-              </button>
+      <button className="cta-outline">
+        View Curriculum
+      </button>
+    </div>
 
-              <button className="bg-white text-[#0a2540] border border-slate-200 px-8 py-4 rounded-lg font-bold hover:shadow-lg transition">
-                View Curriculum
-              </button>
-            </div>
+    <p className="hero-note">
+      Free 15-min roadmap call • Only 23 seats left • Next batch starting soon
+    </p>
 
-            <div className="grid grid-cols-3 gap-6 max-w-xl">
-              <div>
-                <h3 className="text-4xl font-extrabold">12</h3>
-                <p className="text-sm text-[#425466]">Weeks</p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-extrabold">8+</h3>
-                <p className="text-sm text-[#425466]">Projects</p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-extrabold">₹25k</h3>
-                <p className="text-sm text-[#425466]">Course Fee</p>
-              </div>
-            </div>
-          </div>
+    <div className="hero-stats">
+      <div>
+        <h3>12</h3>
+        <p>Weeks</p>
+      </div>
+      <div>
+        <h3>8+</h3>
+        <p>Projects</p>
+      </div>
+      <div>
+        <h3>₹25k</h3>
+        <p>Course Fee</p>
+      </div>
+    </div>
 
-          <div className="relative hidden lg:block">
-            <div className="absolute -inset-8 bg-gradient-to-br from-indigo-300/40 via-pink-200/30 to-orange-200/30 blur-3xl rounded-full" />
+  </div>
 
-            <div className="relative glass-card p-6 hover:-translate-y-3 transition duration-500">
-              <div className="mb-6">
-                <p className="text-sm font-bold text-[#635bff] mb-2">
-                  Skills you will master
-                </p>
-                <h3 className="text-2xl font-extrabold">
-                  Build modern AI websites
-                </h3>
-              </div>
+  <div className="hero-right-final">
+  <div className="hero-shape-final"></div>
+  <div className="hero-ring-final"></div>
+  <div className="hero-dot-final"></div>
+  <div className="hero-pattern-final"></div>
 
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  "React",
-                  "Next.js",
-                  "AI Tools",
-                  "GitHub",
-                  "Vercel",
-                  "Portfolio",
-                ].map((item) => (
-                  <div key={item} className="tech-card">
-                    <span>✦</span>
-                    <h4>{item}</h4>
-                    <p>Practical learning</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  
 
+  <div className="hero-dashboard-final">
+    <p>Week 6 / 12</p>
+    <h3>Building AI SaaS Dashboard</h3>
+
+    <div className="hero-progress-final">
+      <span></span>
+      <b>60%</b>
+    </div>
+
+    <div className="hero-row-final">
+      <span>Project Progress</span>
+      <em>In Progress</em>
+    </div>
+
+    <div className="hero-row-final">
+      <span>Mentorship</span>
+      <em className="green">Active</em>
+    </div>
+
+    <div className="hero-row-final">
+      <span>Deployment</span>
+      <em className="green">Ready</em>
+    </div>
+  </div>
+
+  <div className="hero-mini-final ai-final">
+    <div className="hero-mini-icon">🤖</div>
+    <h4>AI Tools</h4>
+    <p>Build smarter with AI</p>
+  </div>
+
+  <div className="hero-mini-final vercel-final">
+    <div className="hero-mini-icon">☁</div>
+    <h4>Vercel</h4>
+    <p>Deploy in one click</p>
+  </div>
+
+  <div className="hero-project-final">
+    <p>Recent Project</p>
+
+    <div className="hero-project-screen">
+      <span>AI Landing Page</span>
+      <h4>Next Generation AI Landing Page</h4>
+      <button>Explore Project</button>
+    </div>
+
+    <div className="hero-project-foot">
+      <b>AI Landing Page</b>
+      <span>● Live</span>
+    </div>
+  </div>
+</div>
+</section>
     {/* PROBLEM SECTION */}
 <section className="relative px-6 py-32 bg-[#07111f] text-white overflow-hidden">
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,91,255,0.28),transparent_35%),radial-gradient(circle_at_80%_60%,rgba(255,90,150,0.18),transparent_35%)]" />
@@ -220,18 +247,18 @@ useEffect(() => {
 </section>
 
 {/* TRANSFORMATION SECTION */}
-<section className="relative px-6 py-32 bg-[#f7f9ff] overflow-hidden">
+<section className="relative px-6 py-32 bg-[#fffaf0] overflow-hidden">
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,91,255,0.16),transparent_35%),radial-gradient(circle_at_80%_50%,rgba(255,90,150,0.12),transparent_35%)]" />
 
   <div className="relative max-w-7xl mx-auto">
     <div className="max-w-4xl mx-auto text-center mb-16 transformation-reveal">
-      <p className="text-[#635bff] font-extrabold mb-4">
+      <p className="text-[#f4b400] font-extrabold mb-4">
         The Transformation
       </p>
 
       <h2 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6 text-[#0a2540]">
         From confused learner to{" "}
-        <span className="bg-gradient-to-r from-[#635bff] to-[#9b5cff] bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[#f4b400] to-[#ffcc33] bg-clip-text text-transparent">
           confident developer.
         </span>
       </h2>
@@ -243,7 +270,7 @@ useEffect(() => {
       </p>
     </div>
 
-    <div className="grid lg:grid-cols-4 gap-6">
+    <div className="transformation-wrapper grid lg:grid-cols-4 gap-6">
       {[
         {
           num: "01",
@@ -272,7 +299,9 @@ useEffect(() => {
       ].map((item, index) => (
         <div
           key={item.num}
-          className="transformation-card group relative min-h-[300px] p-7 rounded-[2rem] bg-white/90 border border-indigo-100 shadow-[0_25px_80px_rgba(99,91,255,0.12)] hover:-translate-y-4 hover:rotate-[1deg] hover:shadow-[0_40px_110px_rgba(99,91,255,0.28)] transition duration-500 overflow-hidden"
+          className={`transformation-card group relative min-h-[320px] p-7 rounded-[2rem] bg-white/95 border border-yellow-100 shadow-[0_25px_80px_rgba(244,180,0,0.14)] transition duration-500 overflow-hidden ${
+            item.title === "Build" ? "active" : ""
+          }`}
           style={{ animationDelay: `${index * 0.15}s` }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-100/70 to-purple-100/60 opacity-0 group-hover:opacity-100 transition duration-500" />
@@ -282,7 +311,7 @@ useEffect(() => {
           </span>
 
           <div className="relative">
-            <div className="transformation-icon w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center text-2xl shadow-md mb-12 group-hover:scale-110 transition">
+            <div className="transformation-icon w-14 h-14 rounded-2xl bg-gradient-to-br from-yellow-100 to-orange-100 flex items-center justify-center text-2xl shadow-md mb-12 group-hover:scale-110 transition">
               {item.icon}
             </div>
 
