@@ -155,7 +155,7 @@ useEffect(() => {
   </div>
 
   <div className="hero-mini-final ai-final">
-    <div className="hero-mini-icon">🤖</div>
+    <div className="hero-mini-icon">💻</div>
     <h4>AI Tools</h4>
     <p>Build smarter with AI</p>
   </div>
@@ -282,13 +282,13 @@ useEffect(() => {
           num: "02",
           title: "Build",
           desc: "Create responsive websites using React and Next.js.",
-          icon: "⚡",
+          icon: "🛠️",
         },
         {
           num: "03",
           title: "Improve",
           desc: "Use AI tools and code reviews to improve your work.",
-          icon: "🤖",
+          icon: "💻",
         },
         {
           num: "04",
@@ -298,13 +298,18 @@ useEffect(() => {
         },
       ].map((item, index) => (
         <div
-          key={item.num}
-          className={`transformation-card group relative min-h-[320px] p-7 rounded-[2rem] bg-white/95 border border-yellow-100 shadow-[0_25px_80px_rgba(244,180,0,0.14)] transition duration-500 overflow-hidden ${
-            item.title === "Build" ? "active" : ""
-          }`}
-          style={{ animationDelay: `${index * 0.15}s` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-100/70 to-purple-100/60 opacity-0 group-hover:opacity-100 transition duration-500" />
+  key={item.num}
+  className={`transformation-card group relative min-h-[320px] p-7 rounded-[2rem] bg-white/95 border border-yellow-100 shadow-[0_25px_80px_rgba(244,180,0,0.14)] transition duration-500 overflow-hidden ${
+    item.title === "Build" ? "active" : ""
+  }`}
+  style={{ animationDelay: `${index * 0.15}s` }}
+
+  onMouseMove={(e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    e.currentTarget.style.setProperty("--x", `${e.clientX - rect.left}px`);
+    e.currentTarget.style.setProperty("--y", `${e.clientY - rect.top}px`);
+  }}
+>
 
           <span className="absolute top-6 right-6 text-6xl font-extrabold text-indigo-100 group-hover:text-indigo-200 transition">
             {item.num}
@@ -503,7 +508,7 @@ className="hidden md:flex absolute left-[50%] top-0 -translate-x-1/2 -translate-
           title: "AI Chatbot Website",
           desc: "A premium AI website concept with prompt sections, chat-style UI and smart interaction flow.",
           tag: "AI Workflow",
-          icon: "🤖",
+          icon: "💻",
           span: "lg:col-span-5",
         },
         {
